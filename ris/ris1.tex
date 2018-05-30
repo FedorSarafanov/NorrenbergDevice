@@ -1,0 +1,135 @@
+\documentclass[tikz]{standalone}
+
+\usepackage[english,russian]{babel}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage
+{
+    tikz,
+    pgfplots,
+    verbatim,
+    amssymb,
+}
+\usepackage{xcolor}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usetikzlibrary
+{
+    arrows,
+    patterns,
+    angles,
+    quotes,
+    calc, 
+    3d,
+    backgrounds, 
+    positioning
+}
+
+\makeatletter
+\pgfkeys{/eye/.cd,
+  x/.code           = {\def\eye@x{#1}},
+  y/.code           = {\def\eye@y{#1}},
+  rotation/.code    = {\def\eye@rot{#1}},
+  radius/.code      = {\def\eye@rad{#1}}
+  }
+\newcommand{\eye}[1][]{% size, x, y, rotation  
+\pgfkeys{/eye/.cd,
+  x         = 0,
+  y         = 0,
+  rotation  = 0,
+  radius    = 1
+  } 
+\pgfqkeys{/eye}{#1}   
+   \draw[rotate around={\eye@rot:(\eye@x,\eye@y)}] 
+         (\eye@x,\eye@y) -- ++(-.5*55:\eye@rad) 
+         (\eye@x,\eye@y) -- ++(.5*55:\eye@rad);
+   \draw (\eye@x,\eye@y) ++(\eye@rot+55:.75*\eye@rad) arc (\eye@rot+55:\eye@rot-55:.75*\eye@rad);
+  % IRIS
+   \draw[fill=gray] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+180-55:\eye@rot+180+55:.28*\eye@rad);
+  %PUPIL, a filled arc 
+   \draw[fill=black] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+55/3:\eye@rot-55/3:.75*\eye@rad);
+}
+\makeatother 
+
+
+\makeatletter
+\pgfkeys{/lineann/.cd,
+  x/.code           = {\def\lineann@x{#1}},
+  y/.code           = {\def\lineann@y{#1}},
+  fill/.code    = {\def\lineann@fill{#1}},
+  len/.code    = {\def\lineann@len{#1}},
+  pos/.code    = {\def\lineann@pos{#1}},
+  width/.code    = {\def\lineann@width{#1}},
+  rotate/.code    = {\def\lineann@rotate{#1}},
+  text/.code      = {\def\lineann@text{#1}}
+  }
+\newcommand{\lineann}[1][]{% size, x, y, rotation  
+\pgfkeys{/lineann/.cd,
+  x         = 0,
+  y         = 0,
+  len       =1,
+  width       =1,
+  fill     = white,
+  pos     = 0.8,
+  rotate     = 0,
+  text      = {}
+  } 
+\pgfqkeys{/lineann}{#1}  
+\begin{scope}[xshift=\lineann@x, yshift=\lineann@y]
+    \begin{scope}[rotate=\lineann@rotate, black,inner sep=2pt, ]
+        \draw[dashed, blue!40] (0,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (a) {};
+        \draw[dashed, blue!40] (\lineann@width,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (b) {};
+        \draw[|<->|] (a) -- node[fill=\lineann@fill, align=center, scale=0.8] {\lineann@text} (b);
+    \end{scope}
+    \end{scope} 
+}
+\makeatother 
+
+\newcommand{\defcolor}[2]{
+  \definecolor{SEviolet#1}{wave}{#2}
+  \colorlet{#1}[rgb]{SEviolet#1}
+}
+\begin{document}
+\begin{tikzpicture}[]
+    \xdef\darkness{0}
+    \xdef\opa{0.2}
+    \xdef\SIZE{6}
+    \xdef\setka{1}
+    \input{setka}
+
+
+    \eye[radius=0.5,x=2, y=8,rotation=-90] 
+
+
+    \lineann[x=7cm,y=1cm,len=2cm,width=2cm,text={Фильтр},pos=0.5,rotate=90]
+   
+    \defcolor{cpp}{500}
+    \draw[fill=cpp, opacity=0.8] (0,2) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Фильтр};
+
+    \foreach \x in {1,1.1,...,3} {
+        \pgfmathsetmacro{\infp}{125*\x+295}
+      \defcolor{cpp\x}{\infp}
+      \draw[color=cpp\x,->] (\x,0) -- (\x,2);
+      % node[above] {\infp};
+    }
+
+    \foreach \x in {1.5,1.6,...,2.5} {
+        \pgfmathsetmacro{\infp}{125*\x+295}
+      \defcolor{cpp\x}{\infp}
+      \draw[color=cpp\x,->] (\x,2.5) -- (\x,3.5);
+    }
+
+    \draw[fill=white, opacity=0.8] (0,3.5) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Поляризатор};
+
+    \foreach \x in {1.5,1.6,...,2.5} {
+        \pgfmathsetmacro{\infp}{125*\x+295}
+      \defcolor{cpp\x}{\infp}
+      \draw[color=cpp\x,->] (\x,4) -- (\x,4.5);
+    }
+
+    \draw[fill=white, opacity=0.8] (0,4.5) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Фазовая пластинка};
+
+\end{tikzpicture}    
+\end{document}

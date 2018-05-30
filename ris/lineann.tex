@@ -1,0 +1,34 @@
+\makeatletter
+\pgfkeys{/lineann/.cd,
+  x/.code           = {\def\lineann@x{#1}},
+  y/.code           = {\def\lineann@y{#1}},
+  fill/.code    = {\def\lineann@fill{#1}},
+  len/.code    = {\def\lineann@len{#1}},
+  pos/.code    = {\def\lineann@pos{#1}},
+  width/.code    = {\def\lineann@width{#1}},
+  rotate/.code    = {\def\lineann@rotate{#1}},
+  text/.code      = {\def\lineann@text{#1}}
+  }
+\newcommand{\lineann}[1][]{% size, x, y, rotation  
+\pgfkeys{/lineann/.cd,
+  x         = 0,
+  y         = 0,
+  len       =1,
+  width       =1,
+  fill     = white,
+  pos     = 0.8,
+  rotate     = 0,
+  text      = {}
+  } 
+\pgfqkeys{/lineann}{#1}  
+\begin{scope}[xshift=\lineann@x, yshift=\lineann@y]
+    \begin{scope}[rotate=\lineann@rotate, black,inner sep=2pt, ]
+        \draw[dashed, blue!40] (0,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (a) {};
+        \draw[dashed, blue!40] (\lineann@width,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (b) {};
+        \draw[|<->|] (a) -- node[fill=\lineann@fill, align=center, scale=0.8] {\lineann@text} (b);
+    \end{scope}
+    \end{scope} 
+}
+\makeatother 

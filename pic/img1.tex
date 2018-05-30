@@ -1,0 +1,39 @@
+\documentclass[parskip]{scrartcl}
+\usepackage[margin=15mm]{geometry}
+\usepackage{tikz}
+
+  \makeatletter
+\pgfkeys{/eye/.cd,
+  x/.code           = {\def\eye@x{#1}},
+  y/.code           = {\def\eye@y{#1}},
+  rotation/.code    = {\def\eye@rot{#1}},
+  radius/.code      = {\def\eye@rad{#1}}
+  }
+
+\newcommand{\eye}[1][]{% size, x, y, rotation  
+\pgfkeys{/eye/.cd,
+  x         = 0,
+  y         = 0,
+  rotation  = 0,
+  radius    = 1
+  } 
+\pgfqkeys{/eye}{#1}   
+   \draw[rotate around={\eye@rot:(\eye@x,\eye@y)}] 
+         (\eye@x,\eye@y) -- ++(-.5*55:\eye@rad) 
+         (\eye@x,\eye@y) -- ++(.5*55:\eye@rad);
+   \draw (\eye@x,\eye@y) ++(\eye@rot+55:.75*\eye@rad) arc (\eye@rot+55:\eye@rot-55:.75*\eye@rad);
+  % IRIS
+   \draw[fill=gray] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+180-55:\eye@rot+180+55:.28*\eye@rad);
+  %PUPIL, a filled arc 
+   \draw[fill=black] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+55/3:\eye@rot-55/3:.75*\eye@rad);
+}
+\makeatother   
+
+\begin{document}
+
+\begin{tikzpicture}
+    \eye[radius=1,y=1,rotation=-10]
+    \eye[radius=2,x=4,rotation=30] 
+\end{tikzpicture}
+
+\end{document} 
