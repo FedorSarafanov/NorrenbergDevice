@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.1)  30 MAY 2018 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.1)  30 MAY 2018 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,92 +1091,80 @@ File: uesint.fd
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Overfull \hbox (24.09723pt too wide) in paragraph at lines 67--67
-[]\T2A/cmr/bx/n/14.4 Двойное пре-лом-ле-ние и по-ля-ри-за-ция све-та в кри-стал
--лах. Устрой-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 88.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 88.
-
-[3]
-<pic/rot_eo.jpg, id=58, 4175.6pt x 2348.775pt>
-File: pic/rot_eo.jpg Graphic file (type jpg)
-<use pic/rot_eo.jpg>
-Package pdftex.def Info: pic/rot_eo.jpg  used on input line 136.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
- [4]
-<pic/eo.jpg, id=62, 4175.6pt x 2348.775pt>
-File: pic/eo.jpg Graphic file (type jpg)
-<use pic/eo.jpg>
-Package pdftex.def Info: pic/eo.jpg  used on input line 144.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
- [5 <./pic/rot_eo.jpg> <./pic/eo.jpg>]
-<pic/dv.jpg, id=66, 4175.6pt x 2348.775pt>
-File: pic/dv.jpg Graphic file (type jpg)
-<use pic/dv.jpg>
-Package pdftex.def Info: pic/dv.jpg  used on input line 155.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
-
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 164.
-
-[6 <./pic/dv.jpg>] [7]
-<pic/b1.jpg, id=77, 2348.775pt x 4175.6pt>
-File: pic/b1.jpg Graphic file (type jpg)
-<use pic/b1.jpg>
-Package pdftex.def Info: pic/b1.jpg  used on input line 235.
-(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
- [8]
-<pic/b2.jpg, id=81, 2348.775pt x 4175.6pt>
-File: pic/b2.jpg Graphic file (type jpg)
-<use pic/b2.jpg>
-Package pdftex.def Info: pic/b2.jpg  used on input line 242.
-(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
- [9 <./pic/b1.jpg>]
-<ris/ris1.pdf, id=85, 142.66399pt x 228.02188pt>
+[2] [3] [4]
+<ris/ris1.pdf, id=62, 142.66399pt x 228.02188pt>
 File: ris/ris1.pdf Graphic file (type pdf)
 <use ris/ris1.pdf>
-Package pdftex.def Info: ris/ris1.pdf  used on input line 280.
+Package pdftex.def Info: ris/ris1.pdf  used on input line 190.
 (pdftex.def)             Requested size: 142.41547pt x 227.62204pt.
-<ris/ris1b.pdf, id=86, 155.1657pt x 141.3521pt>
+<ris/ris1b.pdf, id=63, 155.1657pt x 141.3521pt>
 File: ris/ris1b.pdf Graphic file (type pdf)
 <use ris/ris1b.pdf>
-Package pdftex.def Info: ris/ris1b.pdf  used on input line 286.
+Package pdftex.def Info: ris/ris1b.pdf  used on input line 196.
 (pdftex.def)             Requested size: 156.1739pt x 142.26378pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 278--289
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 188--199
  []$[]$  $[]$ 
  []
 
 
-LaTeX Warning: Reference `fig:figure5' on page 10 undefined on input line 297.
+LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 205.
 
 
-LaTeX Warning: Reference `fig:figure5' on page 10 undefined on input line 301.
+LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 208.
 
-[10 <./pic/b2.jpg>]
+[5]
 
-LaTeX Warning: Command \CYRO invalid in math mode on input line 310.
+LaTeX Warning: Command \CYRO invalid in math mode on input line 216.
 
 Missing character: There is no О in font cmr12!
-[11 <./ris/ris1.pdf> <./ris/ris1b.pdf>] [12] [13] [14]
+[6 <./ris/ris1.pdf> <./ris/ris1b.pdf>] [7] [8] [9] [10]
+<pic/rot_eo.jpg, id=116, 4175.6pt x 2348.775pt>
+File: pic/rot_eo.jpg Graphic file (type jpg)
+<use pic/rot_eo.jpg>
+Package pdftex.def Info: pic/rot_eo.jpg  used on input line 379.
+(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
+<pic/eo.jpg, id=117, 4175.6pt x 2348.775pt>
+File: pic/eo.jpg Graphic file (type jpg)
+<use pic/eo.jpg>
+Package pdftex.def Info: pic/eo.jpg  used on input line 387.
+(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
+ [11 <./pic/rot_eo.jpg>]
+<pic/dv.jpg, id=121, 4175.6pt x 2348.775pt>
+File: pic/dv.jpg Graphic file (type jpg)
+<use pic/dv.jpg>
+Package pdftex.def Info: pic/dv.jpg  used on input line 398.
+(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
+[12 <./pic/eo.jpg>]
 
-LaTeX Warning: Reference `eq:bot' on page 15 undefined on input line 467.
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 407.
 
-[15] [16] (./norrenberg.aux)
+<pic/b1.jpg, id=126, 2348.775pt x 4175.6pt>
+File: pic/b1.jpg Graphic file (type jpg)
+<use pic/b1.jpg>
+Package pdftex.def Info: pic/b1.jpg  used on input line 420.
+(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
+[13 <./pic/dv.jpg>]
+<pic/b2.jpg, id=130, 2348.775pt x 4175.6pt>
+File: pic/b2.jpg Graphic file (type jpg)
+<use pic/b2.jpg>
+Package pdftex.def Info: pic/b2.jpg  used on input line 427.
+(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
+ [14 <./pic/b1.jpg>] [15 <./pic/b2.jpg>]
+<images/RADUGA.jpg, id=137, 230.3004pt x 63.5976pt>
+File: images/RADUGA.jpg Graphic file (type jpg)
+<use images/RADUGA.jpg>
+Package pdftex.def Info: images/RADUGA.jpg  used on input line 474.
+(pdftex.def)             Requested size: 483.69687pt x 133.58311pt.
+ [16 <./images/RADUGA.jpg>] [17] (./norrenberg.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1185,13 +1173,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38177 strings out of 492982
- 944753 string characters out of 6138580
- 1203167 words of memory out of 5000000
- 40962 multiletter control sequences out of 15000+600000
- 21313 words of font info for 66 fonts, out of 8000000 for 9000
+ 38138 strings out of 492982
+ 944200 string characters out of 6138580
+ 1203171 words of memory out of 5000000
+ 40938 multiletter control sequences out of 15000+600000
+ 17588 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,12n,128p,2276b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,12n,128p,1854b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1209,10 +1197,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public
 /cm-super/sfrm1728.pfb>
-Output written on norrenberg.pdf (17 pages, 6766183 bytes).
+Output written on norrenberg.pdf (18 pages, 6817378 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

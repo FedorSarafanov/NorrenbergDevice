@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1527707813 "norrenberg.tex" "norrenberg.pdf" "norrenberg" 1527707815
+["pdflatex"] 1527713546 "norrenberg.tex" "norrenberg.pdf" "norrenberg" 1527713547
   "/home/osabio/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1523865364 3308 eee81981029f67083258db36df06e523 ""
   "/home/osabio/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1523865362 3304 6a543c07045572737981351171e0505e ""
   "/home/osabio/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1523865360 3312 d199be9bd555944e2403193d58a0256a ""
@@ -18,10 +18,8 @@
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1520157226 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1520157226 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1520157226 940 228d6584342e91276bf566bcf9716b83 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1520157226 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1520157226 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1520157226 1344 8a0be4fe4d376203000810ad4dc81558 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1520157226 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1520157226 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1520157226 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1520157226 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -295,9 +293,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1520157258 32585 d82bbcf7626b7842c87671687479e852 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1523819935 338848 7c5e75bf1b5ed330bc4301a89fe94748 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1522581394 7738160 f789f6efae99a926314cef46ec703c48 ""
-  "norrenberg.aux" 1527707815 12530 df0b8d0854983c179add748d1b2229ae ""
-  "norrenberg.tex" 1527707812 40118 ab25ae7a7bca470ffdf37a94e86aec99 ""
-  "norrenberg.toc" 1527707815 7775 e7b5e4d52d85bb5a59f89dcf442dee5e ""
+  "images/RADUGA.jpg" 1527710725 55999 da6f8de28065cf9706a154b813b43b25 ""
+  "norrenberg.aux" 1527713547 10142 98888fa60bc66e0f49c0c873735893ed ""
+  "norrenberg.tex" 1527713544 40853 6e09eb370593fdda64efea9bab2f5106 ""
+  "norrenberg.toc" 1527713547 5289 0119043e12bee284c556c46f9e81b1bf ""
   "pic/b1.jpg" 1527699410 1920884 b159d26c5f23b68061c217fa119e217d ""
   "pic/b2.jpg" 1527699410 1618860 33654647c2a22e822fa50549f0a67065 ""
   "pic/dv.jpg" 1527502478 942323 47e3749faec7e61bc49c18215ca9d1b5 ""
@@ -308,7 +307,7 @@
   "text/diss.tex" 1527502037 7359 44191485f8d88b1be37fddae17d3cc5c ""
   "text/titlepage.tex" 1527502037 678 ae795d40a3cc9bfbe3be5ea4b0cfc384 ""
   (generated)
-  "norrenberg.log"
   "norrenberg.toc"
   "norrenberg.aux"
+  "norrenberg.log"
   "norrenberg.pdf"
