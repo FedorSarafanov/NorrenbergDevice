@@ -1,8 +1,8 @@
 \input{text/diss}
+% \usepackage{subfig}
 \usepackage{setspace}
 
 \begin{document}
-
 \def\labauthors{Понур К.А., Сарафанов Ф.Г., Сидоров Д.А.}
 \def\labgroup{420}
 \def\labnumber{312}
@@ -264,12 +264,32 @@ $\rho_{\bot}\neq0$ при $\rho_{\|}$.
 \subsection{Интерференция поляризованного света в параллельных лучах.
 Фазовые пластинки $\lambda/2$ и $\lambda/4$ и образцы для исследования. Вращение плоскости колебаний в кристаллах кварца. Опыты с удвоителем Норренберга}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{pic/3f.jpg}
-	\caption{}
-	\label{fig:figure5}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \subfloat[label 1]{{\includegraphics[width=5cm]{ris/ris1.pdf} }}%
+%     \qquad
+%     \subfloat[label 2]{{\includegraphics[width=5cm]{ris/ris1b.pdf} }}%
+%     \caption{2 Figures side by side}%
+%     % \label{fig:example}%
+% 	\label{fig:figure5}
+% \end{figure}
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[c]{0.5\textwidth}
+        \centering
+        \includegraphics[height=8cm]{ris/ris1.pdf}
+        \caption{Установка}
+    \end{subfigure}%
+    ~ 
+    \begin{subfigure}[c]{0.5\textwidth}
+        \centering
+        \includegraphics[height=5cm]{ris/ris1b}
+        \caption{Ориентация поляризатора и анализатора}
+    \end{subfigure}
+    \caption{Иллюстрации к объяснению}
+% 	\label{fig:figure5}
+
+\end{figure*} 
 
 Пусть линейно поляризованный свет, прошедший через узкопо­
 лосный фильтр $\text{Ф}$ и поляризатор $\text{П}$ , падает на двупрелом-

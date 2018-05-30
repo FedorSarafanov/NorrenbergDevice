@@ -96,17 +96,16 @@
     \xdef\darkness{0}
     \xdef\opa{0.2}
     \xdef\SIZE{6}
-    \xdef\setka{1}
+    \xdef\setka{0}
     \input{setka}
 
 
     \eye[radius=0.5,x=2, y=8,rotation=-90] 
 
 
-    \lineann[x=7cm,y=1cm,len=2cm,width=2cm,text={Фильтр},pos=0.5,rotate=90]
    
     \defcolor{cpp}{500}
-    \draw[fill=cpp, opacity=0.8] (0,2) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Фильтр};
+    \draw[fill=cpp, opacity=0.8] (0,2) rectangle node [yshift=-0cm,opacity=1] {Фильтр} ++(4,0.5) ;
 
     \foreach \x in {1,1.1,...,3} {
         \pgfmathsetmacro{\infp}{125*\x+295}
@@ -121,7 +120,7 @@
       \draw[color=cpp\x,->] (\x,2.5) -- (\x,3.5);
     }
 
-    \draw[fill=white, opacity=0.8] (0,3.5) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Поляризатор};
+    \draw[fill=white, opacity=0.8] (0,3.5) rectangle node [yshift=0,opacity=1] {Поляризатор} ++(4,0.5) ;
 
     \foreach \x in {1.5,1.6,...,2.5} {
         \pgfmathsetmacro{\infp}{125*\x+295}
@@ -129,7 +128,25 @@
       \draw[color=cpp\x,->] (\x,4) -- (\x,4.5);
     }
 
-    \draw[fill=white, opacity=0.8] (0,4.5) rectangle ++(4,0.5) node [right, yshift=-0.25cm,opacity=1] {Фазовая пластинка};
+    \draw[fill=white, opacity=0.8] (0,4.5) rectangle node [ yshift=0cm,opacity=1] {Фазовая пластинка} ++(4,1);
+
+    \lineann[x=0cm,y=4.5cm,len=1cm,width=1cm,text={$d$},pos=0.5,rotate=90]
+
+    \foreach \x in {1.5,1.6,...,2.5} {
+        \pgfmathsetmacro{\infp}{125*\x+295}
+      \defcolor{cpp\x}{\infp}
+      \draw[color=cpp\x,->] (\x,5.5) -- ++(0,0.5);
+    }
+
+
+    \draw[fill=white, opacity=0.8] (0,6) rectangle  node [ yshift=0cm,opacity=1] {Анализатор} ++(4,0.5);
+
+    \foreach \x in {1.5,1.6,...,2.5} {
+        \pgfmathsetmacro{\infp}{125*\x+295}
+      \defcolor{cpp\x}{\infp}
+      \draw[color=cpp\x,->] (\x,6.5) -- ++(0,1);
+      % node[above] {\infp};
+    }
 
 \end{tikzpicture}    
 \end{document}

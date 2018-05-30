@@ -1,0 +1,131 @@
+\documentclass[tikz]{standalone}
+
+\usepackage[english,russian]{babel}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage
+{
+    tikz,
+    pgfplots,
+    verbatim,
+    amssymb,
+}
+\usepackage{xcolor}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usetikzlibrary
+{
+    arrows,
+    patterns,
+    quotes,
+    angles,
+    calc, 
+    3d,
+    backgrounds, 
+    positioning,
+    babel
+}
+
+\makeatletter
+\pgfkeys{/eye/.cd,
+  x/.code           = {\def\eye@x{#1}},
+  y/.code           = {\def\eye@y{#1}},
+  rotation/.code    = {\def\eye@rot{#1}},
+  radius/.code      = {\def\eye@rad{#1}}
+  }
+\newcommand{\eye}[1][]{% size, x, y, rotation  
+\pgfkeys{/eye/.cd,
+  x         = 0,
+  y         = 0,
+  rotation  = 0,
+  radius    = 1
+  } 
+\pgfqkeys{/eye}{#1}   
+   \draw[rotate around={\eye@rot:(\eye@x,\eye@y)}] 
+         (\eye@x,\eye@y) -- ++(-.5*55:\eye@rad) 
+         (\eye@x,\eye@y) -- ++(.5*55:\eye@rad);
+   \draw (\eye@x,\eye@y) ++(\eye@rot+55:.75*\eye@rad) arc (\eye@rot+55:\eye@rot-55:.75*\eye@rad);
+  % IRIS
+   \draw[fill=gray] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+180-55:\eye@rot+180+55:.28*\eye@rad);
+  %PUPIL, a filled arc 
+   \draw[fill=black] (\eye@x,\eye@y) ++(\eye@rot+55/3:.75*\eye@rad) arc (\eye@rot+55/3:\eye@rot-55/3:.75*\eye@rad);
+}
+\makeatother 
+
+
+\makeatletter
+\pgfkeys{/lineann/.cd,
+  x/.code           = {\def\lineann@x{#1}},
+  y/.code           = {\def\lineann@y{#1}},
+  fill/.code    = {\def\lineann@fill{#1}},
+  len/.code    = {\def\lineann@len{#1}},
+  pos/.code    = {\def\lineann@pos{#1}},
+  width/.code    = {\def\lineann@width{#1}},
+  rotate/.code    = {\def\lineann@rotate{#1}},
+  text/.code      = {\def\lineann@text{#1}}
+  }
+\newcommand{\lineann}[1][]{% size, x, y, rotation  
+\pgfkeys{/lineann/.cd,
+  x         = 0,
+  y         = 0,
+  len       =1,
+  width       =1,
+  fill     = white,
+  pos     = 0.8,
+  rotate     = 0,
+  text      = {}
+  } 
+\pgfqkeys{/lineann}{#1}  
+\begin{scope}[xshift=\lineann@x, yshift=\lineann@y]
+    \begin{scope}[rotate=\lineann@rotate, black,inner sep=2pt, ]
+        \draw[dashed, blue!40] (0,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (a) {};
+        \draw[dashed, blue!40] (\lineann@width,0) -- +(0,\lineann@len)
+            node [coordinate, pos=\lineann@pos] (b) {};
+        \draw[|<->|] (a) -- node[fill=\lineann@fill, align=center, scale=0.8] {\lineann@text} (b);
+    \end{scope}
+    \end{scope} 
+}
+\makeatother 
+
+\newcommand{\defcolor}[2]{
+  \definecolor{SEviolet#1}{wave}{#2}
+  \colorlet{#1}[rgb]{SEviolet#1}
+}
+\begin{document}
+\begin{tikzpicture}[]
+    \xdef\darkness{0}
+    \xdef\opa{0.2}
+    \xdef\SIZE{4}
+    \xdef\setka{0}
+    \input{setka}
+
+
+    % \eye[radius=0.5,x=2, y=8,rotation=-90] 
+
+
+   
+    \defcolor{cpp}{500}
+    % \draw
+    % \coordinate (a) at (3,-1);% coordinate (a) node[right] {a}
+    \coordinate (o) at (0,0);% coordinate (a) node[right] {a}
+    \coordinate (x) at (1,0);% coordinate (a) node[right] {a}
+    % -- (0,0) coordinate (b) node[left] {b}
+    % -- (2,2) coordinate (c) node[above right] {c}
+
+
+    \draw (o) circle (2cm);
+    \draw[->] (o) -- ++(0,2.5) node [above] {$y$};
+    \draw[->] (-2.5,0) -- (2.5,0) node [right] {$x$};
+
+    \draw[fill=white, draw=white] (0,0) circle (5pt) node[] {$\bigotimes$};
+
+    \draw[thick,color=red] (0,0) -- (30:2.8) coordinate (p) node[right] {П};
+    \draw[thick,color=blue] (0,0) -- (60:2.8) coordinate (a) node[above] {А};
+
+    \draw pic["$\alpha$", draw=red, ->, angle eccentricity=1.1, angle radius=2.3cm] {angle=x--o--p};
+    \draw pic["$ $", draw=blue, -, angle eccentricity=1.1, angle radius=2.1cm] {angle=x--o--p};
+    \draw pic["$\beta$", draw=blue, ->, angle eccentricity=1.1, angle radius=2.1cm] {angle=p--o--a};
+    \draw pic["$\beta-\alpha$", draw=black, ->, angle eccentricity=1.2, angle radius=2.6cm] {angle=p--o--a};
+\end{tikzpicture}    
+\end{document}
