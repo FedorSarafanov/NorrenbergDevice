@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.1)  30 MAY 2018 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.4.1)  31 MAY 2018 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,6 +958,12 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 
 LaTeX Warning: Label `fig:figure1' multiply defined.
 
+
+LaTeX Warning: Label `fig:figure1' multiply defined.
+
+
+LaTeX Warning: Label `eq:2' multiply defined.
+
 )
 \openout1 = `norrenberg.aux'.
 
@@ -1101,70 +1107,156 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 <ris/ris1.pdf, id=62, 142.66399pt x 228.02188pt>
 File: ris/ris1.pdf Graphic file (type pdf)
 <use ris/ris1.pdf>
-Package pdftex.def Info: ris/ris1.pdf  used on input line 190.
+Package pdftex.def Info: ris/ris1.pdf  used on input line 191.
 (pdftex.def)             Requested size: 142.41547pt x 227.62204pt.
 <ris/ris1b.pdf, id=63, 155.1657pt x 141.3521pt>
 File: ris/ris1b.pdf Graphic file (type pdf)
 <use ris/ris1b.pdf>
-Package pdftex.def Info: ris/ris1b.pdf  used on input line 196.
+Package pdftex.def Info: ris/ris1b.pdf  used on input line 197.
 (pdftex.def)             Requested size: 156.1739pt x 142.26378pt.
 
-Overfull \hbox (5.22098pt too wide) in paragraph at lines 188--199
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 189--200
  []$[]$  $[]$ 
  []
 
 
-LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 205.
+LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 206.
 
 
-LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 208.
+LaTeX Warning: Reference `fig:figure5' on page 5 undefined on input line 209.
 
 [5]
 
-LaTeX Warning: Command \CYRO invalid in math mode on input line 216.
+LaTeX Warning: Command \CYRO invalid in math mode on input line 217.
 
 Missing character: There is no Î in font cmr12!
 [6 <./ris/ris1.pdf> <./ris/ris1b.pdf>] [7] [8] [9] [10]
-<pic/rot_eo.jpg, id=116, 4175.6pt x 2348.775pt>
+<pic/pic5.pdf, id=116, 221.11006pt x 209.39029pt>
+File: pic/pic5.pdf Graphic file (type pdf)
+<use pic/pic5.pdf>
+Package pdftex.def Info: pic/pic5.pdf  used on input line 376.
+(pdftex.def)             Requested size: 314.40001pt x 297.75482pt.
+<pic/rot_eo.jpg, id=117, 4175.6pt x 2348.775pt>
 File: pic/rot_eo.jpg Graphic file (type jpg)
 <use pic/rot_eo.jpg>
-Package pdftex.def Info: pic/rot_eo.jpg  used on input line 379.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
-<pic/eo.jpg, id=117, 4175.6pt x 2348.775pt>
+Package pdftex.def Info: pic/rot_eo.jpg  used on input line 385.
+(pdftex.def)             Requested size: 314.40001pt x 176.83147pt.
+<pic/eo.jpg, id=118, 4175.6pt x 2348.775pt>
 File: pic/eo.jpg Graphic file (type jpg)
 <use pic/eo.jpg>
-Package pdftex.def Info: pic/eo.jpg  used on input line 387.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
- [11 <./pic/rot_eo.jpg>]
-<pic/dv.jpg, id=121, 4175.6pt x 2348.775pt>
+Package pdftex.def Info: pic/eo.jpg  used on input line 393.
+(pdftex.def)             Requested size: 314.40001pt x 176.83147pt.
+ [11 <./pic/pic5.pdf> <./pic/rot_eo.jpg>]
+<pic/dv.jpg, id=126, 4175.6pt x 2348.775pt>
 File: pic/dv.jpg Graphic file (type jpg)
 <use pic/dv.jpg>
-Package pdftex.def Info: pic/dv.jpg  used on input line 398.
-(pdftex.def)             Requested size: 483.69687pt x 272.05669pt.
-[12 <./pic/eo.jpg>]
+Package pdftex.def Info: pic/dv.jpg  used on input line 405.
+(pdftex.def)             Requested size: 314.40001pt x 176.83147pt.
+ [12 <./pic/eo.jpg> <./pic/dv.jpg>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 407.
+(amsmath)                 on input line 413.
 
-<pic/b1.jpg, id=126, 2348.775pt x 4175.6pt>
+<pic/b1.jpg, id=131, 2348.775pt x 4175.6pt>
 File: pic/b1.jpg Graphic file (type jpg)
 <use pic/b1.jpg>
-Package pdftex.def Info: pic/b1.jpg  used on input line 420.
-(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
-[13 <./pic/dv.jpg>]
-<pic/b2.jpg, id=130, 2348.775pt x 4175.6pt>
+Package pdftex.def Info: pic/b1.jpg  used on input line 447.
+(pdftex.def)             Requested size: 142.26378pt x 252.88263pt.
+<pic/b2.jpg, id=132, 2348.775pt x 4175.6pt>
 File: pic/b2.jpg Graphic file (type jpg)
 <use pic/b2.jpg>
-Package pdftex.def Info: pic/b2.jpg  used on input line 427.
-(pdftex.def)             Requested size: 227.62204pt x 404.65044pt.
- [14 <./pic/b1.jpg>] [15 <./pic/b2.jpg>]
-<images/RADUGA.jpg, id=137, 230.3004pt x 63.5976pt>
+Package pdftex.def Info: pic/b2.jpg  used on input line 454.
+(pdftex.def)             Requested size: 142.26378pt x 252.88263pt.
+
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 445--458
+ []$[]$  $[]$ 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13]
+<pic/s90.jpg, id=136, 2348.775pt x 4175.6pt>
+File: pic/s90.jpg Graphic file (type jpg)
+<use pic/s90.jpg>
+Package pdftex.def Info: pic/s90.jpg  used on input line 470.
+(pdftex.def)             Requested size: 142.26378pt x 252.88263pt.
+<pic/s0.jpg, id=137, 2348.775pt x 4175.6pt>
+File: pic/s0.jpg Graphic file (type jpg)
+<use pic/s0.jpg>
+Package pdftex.def Info: pic/s0.jpg  used on input line 477.
+(pdftex.def)             Requested size: 142.26378pt x 252.88263pt.
+
+Overfull \hbox (5.22098pt too wide) in paragraph at lines 468--481
+ []$[]$  $[]$ 
+ []
+
+[14 <./pic/b1.jpg> <./pic/b2.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 507.
+
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 507.
+ [15 <./pic/s90.jpg> <./pic/s0.jpg>] [16]
+<images/RADUGA.jpg, id=147, 230.3004pt x 63.5976pt>
 File: images/RADUGA.jpg Graphic file (type jpg)
 <use images/RADUGA.jpg>
-Package pdftex.def Info: images/RADUGA.jpg  used on input line 474.
-(pdftex.def)             Requested size: 483.69687pt x 133.58311pt.
- [16 <./images/RADUGA.jpg>] [17] (./norrenberg.aux)
+Package pdftex.def Info: images/RADUGA.jpg  used on input line 562.
+(pdftex.def)             Requested size: 284.52756pt x 78.57877pt.
+<biquarz/red-l.jpg, id=148, 4047.12pt x 3035.34pt>
+File: biquarz/red-l.jpg Graphic file (type jpg)
+<use biquarz/red-l.jpg>
+Package pdftex.def Info: biquarz/red-l.jpg  used on input line 573.
+(pdftex.def)             Requested size: 145.11053pt x 108.7951pt.
+<biquarz/red2.jpg, id=149, 4047.12pt x 3035.34pt>
+File: biquarz/red2.jpg Graphic file (type jpg)
+<use biquarz/red2.jpg>
+Package pdftex.def Info: biquarz/red2.jpg  used on input line 576.
+(pdftex.def)             Requested size: 145.11053pt x 108.7951pt.
+<biquarz/red-r.jpg, id=150, 4047.12pt x 3035.34pt>
+File: biquarz/red-r.jpg Graphic file (type jpg)
+<use biquarz/red-r.jpg>
+Package pdftex.def Info: biquarz/red-r.jpg  used on input line 579.
+(pdftex.def)             Requested size: 145.11053pt x 108.7951pt.
+ [17 <./images/RADUGA.jpg> <./biquarz/red-l.jpg> <./biquarz/red2.jpg> <./biquar
+z/red-r.jpg>]
+<biquarz/yellow-yellow.jpg, id=154, 4047.12pt x 3035.34pt>
+File: biquarz/yellow-yellow.jpg Graphic file (type jpg)
+<use biquarz/yellow-yellow.jpg>
+Package pdftex.def Info: biquarz/yellow-yellow.jpg  used on input line 601.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+<biquarz/orange-green.jpg, id=155, 4047.12pt x 3035.34pt>
+File: biquarz/orange-green.jpg Graphic file (type jpg)
+<use biquarz/orange-green.jpg>
+Package pdftex.def Info: biquarz/orange-green.jpg  used on input line 604.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+<biquarz/red-blue.jpg, id=156, 4047.12pt x 3035.34pt>
+File: biquarz/red-blue.jpg Graphic file (type jpg)
+<use biquarz/red-blue.jpg>
+Package pdftex.def Info: biquarz/red-blue.jpg  used on input line 607.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+<biquarz/violet-violet.jpg, id=157, 4047.12pt x 3035.34pt>
+File: biquarz/violet-violet.jpg Graphic file (type jpg)
+<use biquarz/violet-violet.jpg>
+Package pdftex.def Info: biquarz/violet-violet.jpg  used on input line 610.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+<biquarz/blue-red.jpg, id=158, 4047.12pt x 3035.34pt>
+File: biquarz/blue-red.jpg Graphic file (type jpg)
+<use biquarz/blue-red.jpg>
+Package pdftex.def Info: biquarz/blue-red.jpg  used on input line 613.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+<biquarz/green-orange.jpg, id=159, 4047.12pt x 3035.34pt>
+File: biquarz/green-orange.jpg Graphic file (type jpg)
+<use biquarz/green-orange.jpg>
+Package pdftex.def Info: biquarz/green-orange.jpg  used on input line 616.
+(pdftex.def)             Requested size: 120.92421pt x 90.68575pt.
+ [18 <./biquarz/yellow-yellow.jpg> <./biquarz/orange-green.jpg> <./biquarz/red-
+blue.jpg> <./biquarz/violet-violet.jpg> <./biquarz/blue-red.jpg> <./biquarz/gre
+en-orange.jpg>] [19] (./norrenberg.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1173,10 +1265,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38138 strings out of 492982
- 944200 string characters out of 6138580
- 1203171 words of memory out of 5000000
- 40938 multiletter control sequences out of 15000+600000
+ 38234 strings out of 492982
+ 946008 string characters out of 6138580
+ 1203239 words of memory out of 5000000
+ 41017 multiletter control sequences out of 15000+600000
  17588 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,128p,1854b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1197,10 +1289,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public
 /cm-super/sfrm1728.pfb>
-Output written on norrenberg.pdf (18 pages, 6817378 bytes).
+Output written on norrenberg.pdf (20 pages, 15838614 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 223 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

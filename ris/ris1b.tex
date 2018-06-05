@@ -118,10 +118,10 @@
     \draw[->] (o) -- ++(0,2.5) node [above] {$y$};
     \draw[->] (-2.5,0) -- (2.5,0) node [right] {$x$};
 
-    \draw[fill=white, draw=white] (0,0) circle (5pt) node[] {$\bigotimes$};
 
     \draw[thick,color=red] (0,0) -- (30:2.8) coordinate (p) node[right] {П};
     \draw[thick,color=blue] (0,0) -- (60:2.8) coordinate (a) node[above] {А};
+    \draw[fill=white, draw=white] (0,0) circle (5pt) node[] {$\bigodot$};
 
     \draw pic["$\alpha$", draw=red, ->, angle eccentricity=1.1, angle radius=2.3cm] {angle=x--o--p};
     \draw pic["$ $", draw=blue, -, angle eccentricity=1.1, angle radius=2.1cm] {angle=x--o--p};

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1527707356 "ris1b.tex" "ris1b.pdf" "ris1b" 1527707357
+["pdflatex"] 1527759479 "ris1b.tex" "ris1b.pdf" "ris1b" 1527759480
   "/dev/null" 1527442252 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/home/osabio/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm" 1523819948 3220 0e417eaf233b160335902e97259a6c77 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1520157211 3141 82d5616418ed8d5de703b3951bedecb4 ""
@@ -197,10 +197,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1520157258 32585 d82bbcf7626b7842c87671687479e852 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1523819935 338848 7c5e75bf1b5ed330bc4301a89fe94748 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1522581394 7738160 f789f6efae99a926314cef46ec703c48 ""
-  "ris1b.aux" 1527707357 50 0fef47af310be850185ccf42e00e9455 ""
-  "ris1b.tex" 1527707356 3873 85f085656af03bd81e66620ca09e38cb ""
+  "ris1b.aux" 1527759480 50 0fef47af310be850185ccf42e00e9455 ""
+  "ris1b.tex" 1527759479 3871 c99c47b7cf28c21e237160ce61e25ca4 ""
   "setka.tex" 1523819987 418 8d7eb7a98fddd9903c899d6a996ff356 ""
   (generated)
+  "ris1b.aux"
   "ris1b.log"
   "ris1b.pdf"
-  "ris1b.aux"
